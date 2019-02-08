@@ -1,4 +1,4 @@
-module Pods_example {
+framework module Pods_example {
   umbrella header "Pods-example-umbrella.h"
 
   export *

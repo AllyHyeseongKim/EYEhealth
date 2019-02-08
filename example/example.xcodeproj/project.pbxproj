@@ -15,11 +15,12 @@
 		524C19692206E67000CD4971 /* ClockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524C19682206E67000CD4971 /* ClockViewController.swift */; };
 		524C196B2206EAB000CD4971 /* LensTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524C196A2206EAB000CD4971 /* LensTableViewController.swift */; };
 		524C196D2206EAFB00CD4971 /* book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524C196C2206EAFB00CD4971 /* book.swift */; };
-		F4A726302F347566B5E4E9F7 /* libPods-example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FA295D329FA3B053286A24D3 /* libPods-example.a */; };
+		641B55E0010C37C5076FD002 /* Pods_example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34F49DA961E18BC3D1703DB5 /* Pods_example.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		17E38BA6F8858A220E56ABA2 /* Pods-example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-example.release.xcconfig"; path = "Pods/Target Support Files/Pods-example/Pods-example.release.xcconfig"; sourceTree = "<group>"; };
+		34F49DA961E18BC3D1703DB5 /* Pods_example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		524C19532206E5A900CD4971 /* example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		524C19562206E5A900CD4971 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		524C19582206E5A900CD4971 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -31,7 +32,6 @@
 		524C196A2206EAB000CD4971 /* LensTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LensTableViewController.swift; sourceTree = "<group>"; };
 		524C196C2206EAFB00CD4971 /* book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = book.swift; sourceTree = "<group>"; };
 		D95F436628D8A4C8C0136585 /* Pods-example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-example/Pods-example.debug.xcconfig"; sourceTree = "<group>"; };
-		FA295D329FA3B053286A24D3 /* libPods-example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,7 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F4A726302F347566B5E4E9F7 /* libPods-example.a in Frameworks */,
+				641B55E0010C37C5076FD002 /* Pods_example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,7 +58,7 @@
 		0F65EEA164D12CD0D87F6D4F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				FA295D329FA3B053286A24D3 /* libPods-example.a */,
+				34F49DA961E18BC3D1703DB5 /* Pods_example.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -108,6 +108,7 @@
 				524C194F2206E5A900CD4971 /* Sources */,
 				524C19502206E5A900CD4971 /* Frameworks */,
 				524C19512206E5A900CD4971 /* Resources */,
+				3E0063C822E871841BB03B65 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -185,6 +186,28 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3E0063C822E871841BB03B65 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-example/Pods-example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/HGCircularSlider/HGCircularSlider.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HGCircularSlider.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-example/Pods-example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -346,7 +369,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6YM9438P5T;
+				DEVELOPMENT_TEAM = U8TQ4688UM;
 				INFOPLIST_FILE = example/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -365,7 +388,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6YM9438P5T;
+				DEVELOPMENT_TEAM = U8TQ4688UM;
 				INFOPLIST_FILE = example/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
