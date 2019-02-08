@@ -1,9 +1,5 @@
 # EYEhealth
-<html>
-<body>
-	<h3>IOS Application</h3>
-</body>
-	
+---
 ## 0. 아이콘(Icon)
 	
 ---
