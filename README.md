@@ -11,9 +11,9 @@
 	<h3>기본UI구성</h3>
 	<div>
 		<p>iPhoneXR</p>
-		<img src = "html_image/iPhoneXRUI.png" width = "245" height = "400">
+		<img src = "html_image/iPhoneXRUI.png" width = "245" height = "450">
 		<p>iPhone8</p>
-		<img src = "html_image/iPhone8UI.png" width = "245" height = "400">
+		<img src = "html_image/iPhone8UI.png" width = "245" height = "450">
 	</div>
 <boby>
 <html>
