@@ -1,0 +1,16 @@
+PODS:
+  - HGCircularSlider (2.0.0)
+
+DEPENDENCIES:
+  - HGCircularSlider (~> 2.0)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - HGCircularSlider
+
+SPEC CHECKSUMS:
+  HGCircularSlider: 92e2ee098c814709f455b8f46cd9008147f6a869
+
+PODFILE CHECKSUM: 971c2c7233e0f898933833d46e7009dd97acf5e6
+
+COCOAPODS: 1.5.3

@@ -1,0 +1,6 @@
+module Pods_alarmPlus {
+  umbrella header "Pods-alarmPlus-umbrella.h"
+
+  export *
+  module * { export * }
+}

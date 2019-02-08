@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gi4-bW-pAk">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Clock-->
+        <scene sceneID="rRS-Wj-NTI">
+            <objects>
+                <viewController id="gi4-bW-pAk" customClass="ClockViewController" customModule="HGCircularSlider_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8mZ-zl-Wdh"/>
+                        <viewControllerLayoutGuide type="bottom" id="eBe-nv-osW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="g4Z-xc-SDl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="7fp-dA-6YT">
+                                <rect key="frame" x="26" y="100.5" width="323" height="57"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="116" placeholderIntrinsicHeight="57" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ge6-6c-uDz" userLabel="BedTime Stack View">
+                                        <rect key="frame" x="0.0" y="0.0" width="154" height="57"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="XaZ-O6-chK">
+                                                <rect key="frame" x="28.5" y="0.0" width="97" height="24"/>
+                                                <subviews>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="17" placeholderIntrinsicHeight="24" image="ic_bedtime" translatesAutoresizingMaskIntoConstraints="NO" id="c3C-LA-jdd">
+                                                        <rect key="frame" x="0.0" y="0.0" width="17" height="24"/>
+                                                        <color key="tintColor" red="1" green="0.65098039220000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="75" placeholderIntrinsicHeight="24" text="Bedtime" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8U0-UC-Muz">
+                                                        <rect key="frame" x="22" y="0.0" width="75" height="24"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                        <color key="textColor" red="1" green="0.65098039220000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="108" placeholderIntrinsicHeight="33" text="12:00 AM" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pZq-Lc-GdK">
+                                                <rect key="frame" x="23" y="24" width="108" height="33"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="116" placeholderIntrinsicHeight="57" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ydL-2o-2zI" userLabel="Wake Stack View">
+                                        <rect key="frame" x="169" y="0.0" width="154" height="57"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="gBB-Q2-5r9">
+                                                <rect key="frame" x="28.5" y="0.0" width="97" height="24"/>
+                                                <subviews>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="17" placeholderIntrinsicHeight="24" image="ic_wake" translatesAutoresizingMaskIntoConstraints="NO" id="fdg-zr-HiH">
+                                                        <rect key="frame" x="0.0" y="0.0" width="17" height="24"/>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="75" placeholderIntrinsicHeight="24" text="Wake" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P2x-XG-RtD">
+                                                        <rect key="frame" x="22" y="0.0" width="75" height="24"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                        <color key="textColor" red="0.99215686270000003" green="0.75294117650000003" blue="0.035294117649999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="115" placeholderIntrinsicHeight="33" text="12:00 PM" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uaZ-Wp-EgA">
+                                                <rect key="frame" x="19.5" y="24" width="115" height="33"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="96A-An-zPY" customClass="RangeCircularSlider" customModule="HGCircularSlider">
+                                <rect key="frame" x="27.5" y="173.5" width="320" height="320"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Hours" translatesAutoresizingMaskIntoConstraints="NO" id="9fJ-Q3-s9z">
+                                        <rect key="frame" x="65" y="65" width="190" height="190"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="9fJ-Q3-s9z" secondAttribute="height" multiplier="1:1" id="fhf-yu-mEA"/>
+                                            <constraint firstAttribute="width" constant="190" id="nwj-oJ-Cz2"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="9fJ-Q3-s9z" firstAttribute="centerY" secondItem="96A-An-zPY" secondAttribute="centerY" id="AOa-kQ-sDl"/>
+                                    <constraint firstAttribute="width" constant="320" id="HYb-ZL-phu"/>
+                                    <constraint firstAttribute="width" secondItem="96A-An-zPY" secondAttribute="height" id="riU-ga-FJX"/>
+                                    <constraint firstItem="9fJ-Q3-s9z" firstAttribute="centerX" secondItem="96A-An-zPY" secondAttribute="centerX" id="zoy-gb-7WU"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="lineWidth">
+                                        <real key="value" value="40"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="trackFillColor">
+                                        <color key="value" red="0.99215686270000003" green="0.75294117650000003" blue="0.035294117649999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="diskColor">
+                                        <color key="value" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="diskFillColor">
+                                        <color key="value" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="trackColor">
+                                        <color key="value" red="1" green="1" blue="1" alpha="0.10000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="backtrackLineWidth">
+                                        <real key="value" value="40"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="numberOfRounds">
+                                        <integer key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="updateTexts:" destination="gi4-bW-pAk" eventType="valueChanged" id="nxl-F7-08O"/>
+                                </connections>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0:41" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="abN-uh-LFv">
+                                <rect key="frame" x="146.5" y="306" width="82" height="55"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="40"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="96A-An-zPY" firstAttribute="top" secondItem="7fp-dA-6YT" secondAttribute="bottom" constant="16" id="5FF-hs-KsV"/>
+                            <constraint firstItem="abN-uh-LFv" firstAttribute="centerY" secondItem="96A-An-zPY" secondAttribute="centerY" id="5QB-Eq-ynJ"/>
+                            <constraint firstItem="abN-uh-LFv" firstAttribute="centerX" secondItem="96A-An-zPY" secondAttribute="centerX" id="8hP-wc-er6"/>
+                            <constraint firstItem="96A-An-zPY" firstAttribute="centerY" secondItem="g4Z-xc-SDl" secondAttribute="centerY" id="Gyb-un-VxU"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="7fp-dA-6YT" secondAttribute="trailing" constant="10" id="HBn-s3-eh5"/>
+                            <constraint firstItem="7fp-dA-6YT" firstAttribute="leading" secondItem="g4Z-xc-SDl" secondAttribute="leadingMargin" constant="10" id="Tpc-IT-FTW"/>
+                            <constraint firstItem="96A-An-zPY" firstAttribute="centerX" secondItem="g4Z-xc-SDl" secondAttribute="centerX" id="YY7-rf-Jdv"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="0IL-rl-RUM"/>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout" top="YES"/>
+                    <tabBarItem key="tabBarItem" title="Clock" image="second" id="iq6-UM-GLT"/>
+                    <navigationItem key="navigationItem" id="niw-Fs-edv"/>
+                    <connections>
+                        <outlet property="bedtimeLabel" destination="pZq-Lc-GdK" id="8ae-Gq-76j"/>
+                        <outlet property="durationLabel" destination="abN-uh-LFv" id="5GK-Hy-4fP"/>
+                        <outlet property="rangeCircularSlider" destination="96A-An-zPY" id="rTI-9k-5DX"/>
+                        <outlet property="wakeLabel" destination="uaZ-Wp-EgA" id="SOc-tw-I2K"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NZW-nD-ouj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="106" y="21"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Hours" width="219" height="219"/>
+        <image name="ic_bedtime" width="17" height="19"/>
+        <image name="ic_wake" width="13" height="16"/>
+        <image name="second" width="30" height="30"/>
+    </resources>
+</document>
