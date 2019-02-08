@@ -11,7 +11,7 @@
 ## 2.  멤버(Members)
  * [AllyHyeseongKim](https://github.com/AllyHyeseongKim) : Team Leader, Designer
  * [evyfjae](https://github.com/evyfjae) : IO Developer
- * [heyjins's](https://github.com/heyjins's) : Data Management Developer
+ * [heyjins](https://github.com/heyjins) : Data Management Developer
 
 ---
 ## 3.  프로토타입(Prototype)
