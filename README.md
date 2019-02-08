@@ -10,8 +10,8 @@
 
 ## 2.  멤버(Members)
  * [AllyHyeseongKim](https://github.com/AllyHyeseongKim)
- *
- *
+ * [evyfjae](https://github.com/evyfjae)
+ * [heyjins's](https://github.com/heyjins's)
 
 ---
 ## 3.  프로토타입(Prototype)
