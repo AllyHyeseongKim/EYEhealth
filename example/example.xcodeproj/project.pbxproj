@@ -15,6 +15,11 @@
 		524C19692206E67000CD4971 /* ClockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524C19682206E67000CD4971 /* ClockViewController.swift */; };
 		524C196B2206EAB000CD4971 /* LensTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524C196A2206EAB000CD4971 /* LensTableViewController.swift */; };
 		524C196D2206EAFB00CD4971 /* book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524C196C2206EAFB00CD4971 /* book.swift */; };
+		5251A22B220DBA5700B7D465 /* TintColorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5251A22A220DBA5700B7D465 /* TintColorViewController.swift */; };
+		5251A22D220FFBC900B7D465 /* DataCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5251A22C220FFBC900B7D465 /* DataCenter.swift */; };
+		5251A231220FFC8300B7D465 /* TimeInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5251A230220FFC8300B7D465 /* TimeInfo.swift */; };
+		5251A2332210009F00B7D465 /* Analysis.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5251A2322210009F00B7D465 /* Analysis.swift */; };
+		5251A2372210265600B7D465 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5251A2362210265600B7D465 /* TableViewCell.swift */; };
 		641B55E0010C37C5076FD002 /* Pods_example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34F49DA961E18BC3D1703DB5 /* Pods_example.framework */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +36,11 @@
 		524C19682206E67000CD4971 /* ClockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockViewController.swift; sourceTree = "<group>"; };
 		524C196A2206EAB000CD4971 /* LensTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LensTableViewController.swift; sourceTree = "<group>"; };
 		524C196C2206EAFB00CD4971 /* book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = book.swift; sourceTree = "<group>"; };
+		5251A22A220DBA5700B7D465 /* TintColorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TintColorViewController.swift; sourceTree = "<group>"; };
+		5251A22C220FFBC900B7D465 /* DataCenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataCenter.swift; sourceTree = "<group>"; };
+		5251A230220FFC8300B7D465 /* TimeInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeInfo.swift; sourceTree = "<group>"; };
+		5251A2322210009F00B7D465 /* Analysis.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Analysis.swift; sourceTree = "<group>"; };
+		5251A2362210265600B7D465 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		D95F436628D8A4C8C0136585 /* Pods-example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-example/Pods-example.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -91,8 +101,13 @@
 				524C195F2206E5AB00CD4971 /* LaunchScreen.storyboard */,
 				524C19622206E5AB00CD4971 /* Info.plist */,
 				524C19682206E67000CD4971 /* ClockViewController.swift */,
+				5251A22A220DBA5700B7D465 /* TintColorViewController.swift */,
 				524C196A2206EAB000CD4971 /* LensTableViewController.swift */,
 				524C196C2206EAFB00CD4971 /* book.swift */,
+				5251A22C220FFBC900B7D465 /* DataCenter.swift */,
+				5251A230220FFC8300B7D465 /* TimeInfo.swift */,
+				5251A2322210009F00B7D465 /* Analysis.swift */,
+				5251A2362210265600B7D465 /* TableViewCell.swift */,
 			);
 			path = example;
 			sourceTree = "<group>";
@@ -218,8 +233,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				524C196D2206EAFB00CD4971 /* book.swift in Sources */,
+				5251A2332210009F00B7D465 /* Analysis.swift in Sources */,
 				524C19692206E67000CD4971 /* ClockViewController.swift in Sources */,
 				524C196B2206EAB000CD4971 /* LensTableViewController.swift in Sources */,
+				5251A22D220FFBC900B7D465 /* DataCenter.swift in Sources */,
+				5251A2372210265600B7D465 /* TableViewCell.swift in Sources */,
+				5251A231220FFC8300B7D465 /* TimeInfo.swift in Sources */,
+				5251A22B220DBA5700B7D465 /* TintColorViewController.swift in Sources */,
 				524C19592206E5A900CD4971 /* ViewController.swift in Sources */,
 				524C19572206E5A900CD4971 /* AppDelegate.swift in Sources */,
 			);
@@ -375,7 +395,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.fjae.example;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fjae.examplea;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -394,7 +414,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.fjae.example;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fjae.examplea;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";

@@ -21,16 +21,14 @@ class ClockViewController: UIViewController {
     var count = 0
     
     
-    
-    
-    
-    
     var selectTime = Date()
     var startTime = Date()
     var intervalTime:TimeInterval = 0.0
     var mainDate = Date()
     let content = UNMutableNotificationContent()
     let center = UNUserNotificationCenter.current()
+    
+    
     
     @IBOutlet weak var durationLabel: UILabel!
     @IBOutlet weak var bedtimeLabel: UILabel!
@@ -55,6 +53,10 @@ class ClockViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+           
+        
+        
         
         recommendTime.text = "\(recommend)hour"
         
@@ -86,8 +88,11 @@ class ClockViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    
+    
     @IBAction func updateTexts(_ sender: AnyObject) {
         
+           
         adjustValue(value: &rangeCircularSlider.startPointValue)
         adjustValue(value: &rangeCircularSlider.endPointValue)
         
@@ -112,6 +117,8 @@ class ClockViewController: UIViewController {
         
         let wake = TimeInterval(rangeCircularSlider.endPointValue)
         let wakeDate = Date(timeIntervalSinceReferenceDate: wake)
+        
+        
         
         var forTodayInternal = wakeDate.timeIntervalSince(today!)
         
@@ -145,6 +152,15 @@ class ClockViewController: UIViewController {
     }
     
     @objc func updateTime() {
+        
+        DataCenter.sharedInstnce.timeList.append(timeInfo(selectTime: selectTime, startTime: startTime))
+     //   for i in DataCenter.sharedInstnce.timeList
+      //  {
+        
+    
+   //     }
+      
+        
         //        lblCurrentTime.text = String(count)
         //        count = count + 1
         
