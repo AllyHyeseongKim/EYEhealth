@@ -7,16 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		521C83362211C1BC00D54CDA /* LensList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521C83352211C1BC00D54CDA /* LensList.swift */; };
 		524C19572206E5A900CD4971 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524C19562206E5A900CD4971 /* AppDelegate.swift */; };
-		524C19592206E5A900CD4971 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524C19582206E5A900CD4971 /* ViewController.swift */; };
 		524C195C2206E5A900CD4971 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 524C195A2206E5A900CD4971 /* Main.storyboard */; };
 		524C195E2206E5AB00CD4971 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 524C195D2206E5AB00CD4971 /* Assets.xcassets */; };
 		524C19612206E5AB00CD4971 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 524C195F2206E5AB00CD4971 /* LaunchScreen.storyboard */; };
 		524C19692206E67000CD4971 /* ClockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524C19682206E67000CD4971 /* ClockViewController.swift */; };
 		524C196B2206EAB000CD4971 /* LensTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524C196A2206EAB000CD4971 /* LensTableViewController.swift */; };
-		524C196D2206EAFB00CD4971 /* book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524C196C2206EAFB00CD4971 /* book.swift */; };
-		5251A22B220DBA5700B7D465 /* TintColorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5251A22A220DBA5700B7D465 /* TintColorViewController.swift */; };
-		5251A22D220FFBC900B7D465 /* DataCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5251A22C220FFBC900B7D465 /* DataCenter.swift */; };
 		5251A231220FFC8300B7D465 /* TimeInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5251A230220FFC8300B7D465 /* TimeInfo.swift */; };
 		5251A2332210009F00B7D465 /* Analysis.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5251A2322210009F00B7D465 /* Analysis.swift */; };
 		5251A2372210265600B7D465 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5251A2362210265600B7D465 /* TableViewCell.swift */; };
@@ -26,18 +23,15 @@
 /* Begin PBXFileReference section */
 		17E38BA6F8858A220E56ABA2 /* Pods-example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-example.release.xcconfig"; path = "Pods/Target Support Files/Pods-example/Pods-example.release.xcconfig"; sourceTree = "<group>"; };
 		34F49DA961E18BC3D1703DB5 /* Pods_example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		521C83352211C1BC00D54CDA /* LensList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LensList.swift; sourceTree = "<group>"; };
 		524C19532206E5A900CD4971 /* example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		524C19562206E5A900CD4971 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		524C19582206E5A900CD4971 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		524C195B2206E5A900CD4971 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		524C195D2206E5AB00CD4971 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		524C19602206E5AB00CD4971 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		524C19622206E5AB00CD4971 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		524C19682206E67000CD4971 /* ClockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockViewController.swift; sourceTree = "<group>"; };
 		524C196A2206EAB000CD4971 /* LensTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LensTableViewController.swift; sourceTree = "<group>"; };
-		524C196C2206EAFB00CD4971 /* book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = book.swift; sourceTree = "<group>"; };
-		5251A22A220DBA5700B7D465 /* TintColorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TintColorViewController.swift; sourceTree = "<group>"; };
-		5251A22C220FFBC900B7D465 /* DataCenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataCenter.swift; sourceTree = "<group>"; };
 		5251A230220FFC8300B7D465 /* TimeInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeInfo.swift; sourceTree = "<group>"; };
 		5251A2322210009F00B7D465 /* Analysis.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Analysis.swift; sourceTree = "<group>"; };
 		5251A2362210265600B7D465 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
@@ -95,19 +89,16 @@
 			isa = PBXGroup;
 			children = (
 				524C19562206E5A900CD4971 /* AppDelegate.swift */,
-				524C19582206E5A900CD4971 /* ViewController.swift */,
 				524C195A2206E5A900CD4971 /* Main.storyboard */,
 				524C195D2206E5AB00CD4971 /* Assets.xcassets */,
 				524C195F2206E5AB00CD4971 /* LaunchScreen.storyboard */,
 				524C19622206E5AB00CD4971 /* Info.plist */,
 				524C19682206E67000CD4971 /* ClockViewController.swift */,
-				5251A22A220DBA5700B7D465 /* TintColorViewController.swift */,
 				524C196A2206EAB000CD4971 /* LensTableViewController.swift */,
-				524C196C2206EAFB00CD4971 /* book.swift */,
-				5251A22C220FFBC900B7D465 /* DataCenter.swift */,
 				5251A230220FFC8300B7D465 /* TimeInfo.swift */,
 				5251A2322210009F00B7D465 /* Analysis.swift */,
 				5251A2362210265600B7D465 /* TableViewCell.swift */,
+				521C83352211C1BC00D54CDA /* LensList.swift */,
 			);
 			path = example;
 			sourceTree = "<group>";
@@ -232,15 +223,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				524C196D2206EAFB00CD4971 /* book.swift in Sources */,
 				5251A2332210009F00B7D465 /* Analysis.swift in Sources */,
 				524C19692206E67000CD4971 /* ClockViewController.swift in Sources */,
 				524C196B2206EAB000CD4971 /* LensTableViewController.swift in Sources */,
-				5251A22D220FFBC900B7D465 /* DataCenter.swift in Sources */,
 				5251A2372210265600B7D465 /* TableViewCell.swift in Sources */,
 				5251A231220FFC8300B7D465 /* TimeInfo.swift in Sources */,
-				5251A22B220DBA5700B7D465 /* TintColorViewController.swift in Sources */,
-				524C19592206E5A900CD4971 /* ViewController.swift in Sources */,
+				521C83362211C1BC00D54CDA /* LensList.swift in Sources */,
 				524C19572206E5A900CD4971 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

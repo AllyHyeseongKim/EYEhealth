@@ -16,10 +16,6 @@ extension Date {
 
 @available(iOS 10.0, *)
 class ClockViewController: UIViewController {
-    let timeSelector: Selector = #selector(ClockViewController.updateTime)
-    let interval = 1.0
-    var count = 0
-    
     
     var selectTime = Date()
     var startTime = Date()
@@ -27,8 +23,7 @@ class ClockViewController: UIViewController {
     var mainDate = Date()
     let content = UNMutableNotificationContent()
     let center = UNUserNotificationCenter.current()
-    
-    
+    let appDelegate = UIApplication.shared.delegate as! AppDelegate
     
     @IBOutlet weak var durationLabel: UILabel!
     @IBOutlet weak var bedtimeLabel: UILabel!
@@ -54,13 +49,7 @@ class ClockViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-           
-        
-        
-        
         recommendTime.text = "\(recommend)hour"
-        
-        Timer.scheduledTimer(timeInterval: interval, target: self, selector: timeSelector, userInfo: nil, repeats: true)
         
         center.requestAuthorization(options: [.alert,.sound]) {
             (granted, error) in
@@ -69,6 +58,10 @@ class ClockViewController: UIViewController {
         
         content.title = "설정하신 시간이 되었습니다"
         content.body = "렌즈를 탈착해주세요"
+        
+        appDelegate.AppContent = content
+        appDelegate.AppCenter = center
+        
         
         // setup O'clock
         rangeCircularSlider.startThumbImage = UIImage(named: "Bedtime")
@@ -88,11 +81,8 @@ class ClockViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    
-    
     @IBAction func updateTexts(_ sender: AnyObject) {
         
-           
         adjustValue(value: &rangeCircularSlider.startPointValue)
         adjustValue(value: &rangeCircularSlider.endPointValue)
         
@@ -115,10 +105,8 @@ class ClockViewController: UIViewController {
         let bedtimeDate = Date(timeIntervalSinceReferenceDate: bedtime)
         bedtimeLabel.text = dateFormatter.string(from: bedtimeDate)
         
-        let wake = TimeInterval(rangeCircularSlider.endPointValue)
+        var wake = TimeInterval(rangeCircularSlider.endPointValue)
         let wakeDate = Date(timeIntervalSinceReferenceDate: wake)
-        
-        
         
         var forTodayInternal = wakeDate.timeIntervalSince(today!)
         
@@ -127,22 +115,33 @@ class ClockViewController: UIViewController {
         selectTime = Date(timeInterval: hourinternal, since: today!)
         //print(selectTime)
         
+        
+        appDelegate.AppSelectTime = selectTime
+        
         startTime = Date(timeInterval: startinternal, since: today!)
         
         wakeLabel.text = dateFormatter.string(from: wakeDate)
         
-        
+        if(wake < bedtime) {
+            wake = wake + 60*60*24
+            selectTime = selectTime + 60*60*24
+        }
         
         let duration = wake - bedtime
+        
         let durationDate = Date(timeIntervalSinceReferenceDate: duration)
         if Int(duration)>60*60*8 {
-            recommendTime.textColor = UIColor.red
+            durationLabel.textColor = UIColor.red
         } else {
-            recommendTime.textColor = UIColor.gray
+            durationLabel.textColor = UIColor.white
         }
+        print(startTime)
+        recommendTime.textColor = UIColor.gray
+
         dateFormatter.dateFormat = "HH:mm"
-        
+        durationLabel.text = dateFormatter.string(from: durationDate)
         dateFormatter.dateFormat = "hh:mm a"
+        
     }
     
     func adjustValue(value: inout CGFloat) {
@@ -151,79 +150,7 @@ class ClockViewController: UIViewController {
         value = adjustedMinutes * 60
     }
     
-    @objc func updateTime() {
-        
-        DataCenter.sharedInstnce.timeList.append(timeInfo(selectTime: selectTime, startTime: startTime))
-     //   for i in DataCenter.sharedInstnce.timeList
-      //  {
-        
     
-   //     }
-      
-        
-        //        lblCurrentTime.text = String(count)
-        //        count = count + 1
-        
-        //        let date = NSDate()
-        //        nowTime = date as Date
-        var nowTime = Date() + 60*60*9
-        //print(selectTime)
-        
-        //얼마나 지났는지 측정하기
-        var durationInterval = nowTime.timeIntervalSince(startTime)
-        var durationHour = Int(durationInterval/3600)
-        var durationMin = Int((Int(durationInterval) / 60) % 60)
-        if(durationHour>=recommend && durationMin>0) {
-            durationLabel.textColor = UIColor.red
-        }
-        else {
-            durationLabel.textColor = UIColor.white
-        }
-        if(durationMin<0) {
-            durationLabel.text = "--:--"
-        }
-        else {
-            if(durationHour<10) {
-                if(durationMin<10) {
-                    durationLabel.text = "0\(durationHour):0\(durationMin)"
-                }
-                else {durationLabel.text = "0\(durationHour):\(durationMin)"
-                }
-            }
-            else if(durationMin<10) {
-                durationLabel.text = "\(durationHour):0\(durationMin)"
-            }
-            else {
-                durationLabel.text = "\(durationHour):\(durationMin)"
-            }
-        }
-        intervalTime = selectTime.timeIntervalSince(nowTime)
-        //print(intervalTime)
-        //print(nowTime)
-        //print(mainDate)
-        mainDate = Date().addingTimeInterval(intervalTime)
-        
-        let dateComponents = Calendar.current.dateComponents([.year, .month, .day, .hour, .minute, .second],from: mainDate)
-        
-        if #available(iOS 10.0, *) {
-            let trigger = UNCalendarNotificationTrigger(dateMatching: dateComponents, repeats: false)
-            let uuidString = UUID().uuidString
-            
-            let request = UNNotificationRequest(identifier: uuidString,content: content,trigger: trigger)
-            center.removeAllDeliveredNotifications()
-            center.removeAllPendingNotificationRequests()
-            
-            center.add(request) { (error) in
-                
-            }
-        } else {
-            // Fallback on earlier versions
-        }
-        
-        
-        
-        
-    }
     @IBAction func switchOnOff(_ sender: UISwitch) {
         
         let scale:CGFloat = 100.0
@@ -236,7 +163,7 @@ class ClockViewController: UIViewController {
             switchSquere.frame.size = CGSize(width: switchSquere.frame.width, height: newHeight)
         }
         else {
-            lensOnOffLable.text = "Lens Off"
+            lensOnOffLable.text = "lens Off"
             newHeight = switchSquere.frame.height*scale
             switchSquere.frame.size = CGSize(width: switchSquere.frame.width, height: newHeight)
         }
