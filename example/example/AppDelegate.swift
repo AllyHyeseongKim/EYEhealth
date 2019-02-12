@@ -9,6 +9,14 @@
 import UIKit
 import UserNotifications
 
+protocol ClockViewDelegateProtocol {
+   
+    func saveTimes(times:[Time])
+    func loadTimes() -> [Time]?
+    
+}
+
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
@@ -17,12 +25,25 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var AppCenter = UNUserNotificationCenter.current()
     var AppSelectTime = Date()
     
+    //데이터 save, load
+    var delegate: ClockViewDelegateProtocol?
+    
+    
+    
     var window: UIWindow?
     
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        
+        
+        
+        delegate?.loadTimes()
+        
+        
+        
         // Override point for customization after application launch.
         return true
+        
     }
     
     func applicationWillResignActive(_ application: UIApplication) {
@@ -57,6 +78,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             // Fallback on earlier versions
         }
         
+        
+        
+        delegate?.saveTimes(times: [])
         
         
         
@@ -101,6 +125,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         } else {
             // Fallback on earlier versions
         }
+        
+         delegate?.saveTimes(times: [])
+        
+        
     }
     
     

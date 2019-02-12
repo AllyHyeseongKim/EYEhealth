@@ -15,7 +15,12 @@ extension Date {
 }
 
 @available(iOS 10.0, *)
-class ClockViewController: UIViewController {
+class ClockViewController: UIViewController, ClockViewDelegateProtocol {
+      
+   
+    //추가- 데이터저장
+    var times: [Time] = []
+    //
     
     var selectTime = Date()
     var startTime = Date()
@@ -49,6 +54,8 @@ class ClockViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
+        
         recommendTime.text = "\(recommend)hour"
         
         center.requestAuthorization(options: [.alert,.sound]) {
@@ -61,7 +68,9 @@ class ClockViewController: UIViewController {
         
         appDelegate.AppContent = content
         appDelegate.AppCenter = center
-        
+        //추가-데이터 저장
+        appDelegate.delegate = self
+        //
         
         // setup O'clock
         rangeCircularSlider.startThumbImage = UIImage(named: "Bedtime")
@@ -137,18 +146,73 @@ class ClockViewController: UIViewController {
         }
         print(startTime)
         recommendTime.textColor = UIColor.gray
-
+        
         dateFormatter.dateFormat = "HH:mm"
         durationLabel.text = dateFormatter.string(from: durationDate)
         dateFormatter.dateFormat = "hh:mm a"
         
+        
+        //시간 저장
+       
+        times.append(Time(todayDate: startTime,
+                          startTime: startTime,
+                          selectTime: selectTime,
+                          recommendTime: recommend,
+                          duration: duration,
+                          lensOn: true))
+        
+        
     }
+    
     
     func adjustValue(value: inout CGFloat) {
         let minutes = value / 60
         let adjustedMinutes =  ceil(minutes / 5.0) * 5
         value = adjustedMinutes * 60
     }
+    
+    
+    
+    //데이터 저장
+    func getDocumentDirPath() -> URL {
+        let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
+        return paths[0]
+    }
+    
+    
+    
+    func saveTimes(times:[Time]) {
+        let documentDirPath = getDocumentDirPath().appendingPathComponent("times.arr")
+        
+        do {
+            let data = try NSKeyedArchiver.archivedData(withRootObject: times, requiringSecureCoding: false)
+            try data.write(to: documentDirPath)
+            print("save!!!!!!!")
+        } catch {
+            print("Error!")
+        }
+    }
+    
+    func loadTimes() -> [Time]? {
+        let documentDirPath = getDocumentDirPath().appendingPathComponent("times.arr")
+        
+        print("로드 함수 안 입니다~~ 잘 들어오네요")
+        
+        
+        do {
+            let data = try Data(contentsOf: documentDirPath)
+            if let timesArr = try NSKeyedUnarchiver.unarchiveTopLevelObjectWithData(data) as? [Time] {
+                return timesArr
+                
+            }
+             print("load!!!!!!!")
+        } catch {
+            print("Error!")
+        }
+        return nil
+    }
+    
+    
     
     
     @IBAction func switchOnOff(_ sender: UISwitch) {

@@ -103,7 +103,7 @@
                                         <real key="value" value="40"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="trackFillColor">
-                                        <color key="value" red="0.99215686270000003" green="0.75294117650000003" blue="0.035294117649999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="value" red="0.29853495955467224" green="0.84600949287414551" blue="0.39043116569519043" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="diskColor">
                                         <color key="value" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
@@ -278,7 +278,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xzi-cn-1DP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-750.72463768115949" y="869.19642857142856"/>
+            <point key="canvasLocation" x="-671" y="870"/>
         </scene>
         <!--Setting-->
         <scene sceneID="XL1-Fb-APx">

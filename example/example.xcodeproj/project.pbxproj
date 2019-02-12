@@ -95,10 +95,10 @@
 				524C19622206E5AB00CD4971 /* Info.plist */,
 				524C19682206E67000CD4971 /* ClockViewController.swift */,
 				524C196A2206EAB000CD4971 /* LensTableViewController.swift */,
+				521C83352211C1BC00D54CDA /* LensList.swift */,
 				5251A230220FFC8300B7D465 /* TimeInfo.swift */,
 				5251A2322210009F00B7D465 /* Analysis.swift */,
 				5251A2362210265600B7D465 /* TableViewCell.swift */,
-				521C83352211C1BC00D54CDA /* LensList.swift */,
 			);
 			path = example;
 			sourceTree = "<group>";
