@@ -1,3 +1,0 @@
-target 'alarmPlus' do
-  pod 'HGCircularSlider', '~> 2.0'
-end

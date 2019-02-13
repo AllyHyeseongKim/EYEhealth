@@ -1,5 +1,5 @@
 PODS:
-  - HGCircularSlider (2.0.0)
+  - HGCircularSlider (2.1.0)
 
 DEPENDENCIES:
   - HGCircularSlider
@@ -9,8 +9,8 @@ SPEC REPOS:
     - HGCircularSlider
 
 SPEC CHECKSUMS:
-  HGCircularSlider: 92e2ee098c814709f455b8f46cd9008147f6a869
+  HGCircularSlider: 5b39e1c6eaf39c9e14859e242060196468389f17
 
 PODFILE CHECKSUM: bad60da07ea2a44417533d0c78b897bc4c8f1535
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.6.0
