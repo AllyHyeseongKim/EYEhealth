@@ -19,12 +19,12 @@
 ## 3.  프로토타입(Prototype)
  * 프로토타입 기종 : iPhone XS Max - 12.1
  * Main View (Record on/off)
- <p><img src = "html_image/record_on" width = "200" height = "400"> <img src = "html_image/iPhone8UI.png" width = "200" height = "400"></p>
- <p><img src = "html_image/record_off" width = "200" height = "400"> <img src = "html_image/iPhone8UI.png" width = "200" height = "400"></p>
+ <p><img src = "html_image/record_on.png" width = "200" height = "400"> <img src = "html_image/iPhone8UI.png" width = "200" height = "400"></p>
+ <p><img src = "html_image/record_off.png" width = "200" height = "400"> <img src = "html_image/iPhone8UI.png" width = "200" height = "400"></p>
  * Analysis
- <p><img src = "html_image/analysis" width = "200" height = "400"> <img src = "html_image/iPhone8UI.png" width = "200" height = "400"></p>
+ <p><img src = "html_image/analysis.png" width = "200" height = "400"> <img src = "html_image/iPhone8UI.png" width = "200" height = "400"></p>
  * setting
- <p><img src = "html_image/setting" width = "200" height = "400"> <img src = "html_image/iPhone8UI.png" width = "200" height = "400"></p>
+ <p><img src = "html_image/setting.png" width = "200" height = "400"> <img src = "html_image/iPhone8UI.png" width = "200" height = "400"></p>
  
 ---
 ## 4. 수익모델(Revenue Model)
