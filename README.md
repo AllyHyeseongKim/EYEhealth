@@ -1,6 +1,7 @@
 # EYEhealth
 ---
 ## 0.  아이콘(Icon)
+<p><img src = "project/example/Assets.xcassets/AppIcon.appiconset/Icon-40@3x.png></p>
 	
 ---
 ## 1.  목적(Purpose)
