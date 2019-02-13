@@ -45,9 +45,9 @@ class PageViewController: UIPageViewController, UIPageViewControllerDelegate, UI
         pageControl = UIPageControl(frame: CGRect(x: 0,y: UIScreen.main.bounds.maxY - 50,width: UIScreen.main.bounds.width,height: 50))
         self.pageControl.numberOfPages = orderedViewControllers.count
         self.pageControl.currentPage = 0
-        self.pageControl.tintColor = UIColor.black
-        self.pageControl.pageIndicatorTintColor = UIColor.white
-        self.pageControl.currentPageIndicatorTintColor = UIColor.black
+        self.pageControl.tintColor = UIColor.white
+        self.pageControl.pageIndicatorTintColor = UIColor.black
+        self.pageControl.currentPageIndicatorTintColor = UIColor.white
         self.view.addSubview(pageControl)
     }
     

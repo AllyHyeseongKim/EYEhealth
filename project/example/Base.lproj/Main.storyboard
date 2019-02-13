@@ -103,7 +103,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SfR-1F-G8z" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1777" y="870"/>
+            <point key="canvasLocation" x="-1688" y="870"/>
         </scene>
         <!--Analysis-->
         <scene sceneID="1Xf-a6-DDT">
@@ -193,11 +193,6 @@
                                     <constraint firstItem="3Ai-7j-Zky" firstAttribute="top" secondItem="crg-t7-pj5" secondAttribute="top" constant="50" id="iCb-df-3NT"/>
                                     <constraint firstItem="3Ai-7j-Zky" firstAttribute="leading" secondItem="crg-t7-pj5" secondAttribute="leading" constant="20" id="sRo-mg-wQo"/>
                                 </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jiU-FQ-Xhx">
-                                <rect key="frame" x="17" y="140" width="375" height="9"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.050969488918781281" green="0.050986640155315399" blue="0.050968408584594727" alpha="0.60747538527397271" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uq2-VC-rq8">
                                 <rect key="frame" x="345" y="99" width="51" height="31"/>
@@ -341,6 +336,11 @@
                                 <connections>
                                     <action selector="updateTexts:" destination="aJU-k9-hha" eventType="valueChanged" id="fYY-ho-JZu"/>
                                 </connections>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jiU-FQ-Xhx">
+                                <rect key="frame" x="17" y="140" width="375" height="9"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.050980392156862744" green="0.050986640155315399" blue="0.050968408584594727" alpha="0.84999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="0.050980392156862744" green="0.050980392156862744" blue="0.050980392156862744" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -492,7 +492,6 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="tintColor" red="0.1647058824" green="0.74509803919999995" blue="0.73725490199999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <color key="separatorColor" red="0.43921568630000002" green="0.43921568630000002" blue="0.43921568630000002" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="sectionIndexBackgroundColor" red="0.090196078430000007" green="0.090196078430000007" blue="0.090196078430000007" alpha="1" colorSpace="calibratedRGB"/>
                         <sections>
                             <tableViewSection headerTitle="Notification Sound" id="zHG-Wq-c4B">
@@ -586,8 +585,12 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="pqx-YE-VOI">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.090196078431372548" green="0.090196078431372548" blue="0.090196078431372548" alpha="1" colorSpace="calibratedRGB"/>
-                        <color key="separatorColor" red="0.4392156862745098" green="0.4392156862745098" blue="0.4392156862745098" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <view key="tableFooterView" contentMode="scaleToFill" id="LNm-Ea-qC1">
+                            <rect key="frame" x="0.0" y="132" width="414" height="44"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="0.11762935668230057" green="0.11765726655721664" blue="0.11762756854295731" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        </view>
                         <sections>
                             <tableViewSection id="Ydv-ji-Aog">
                                 <cells>
@@ -668,8 +671,12 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="kNs-Yv-FKu">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.090196078431372548" green="0.090196078431372548" blue="0.090196078431372548" alpha="1" colorSpace="calibratedRGB"/>
-                        <color key="separatorColor" red="0.43921568630000002" green="0.43921568630000002" blue="0.43921568630000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <view key="tableFooterView" contentMode="scaleToFill" id="daW-PU-Obl">
+                            <rect key="frame" x="0.0" y="132" width="414" height="44"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="0.11762935670000001" green="0.1176572666" blue="0.1176275685" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        </view>
                         <sections>
                             <tableViewSection id="l17-H3-W2A">
                                 <cells>
@@ -749,7 +756,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.090196078431372548" green="0.090196078431372548" blue="0.090196078431372548" alpha="1" colorSpace="calibratedRGB"/>
-                        <color key="separatorColor" red="0.43921568630000002" green="0.43921568630000002" blue="0.43921568630000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="separatorColor" cocoaTouchSystemColor="darkTextColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="reuseIdentifier" textLabel="iBU-Ni-auu" detailTextLabel="sWs-dm-6hW" style="IBUITableViewCellStyleSubtitle" id="2lb-tp-sa0">
                                 <rect key="frame" x="0.0" y="28" width="414" height="44"/>
@@ -797,6 +804,6 @@
         <image name="second" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="heD-p2-5zd"/>
+        <segue reference="7hZ-qw-WYp"/>
     </inferredMetricsTieBreakers>
 </document>
