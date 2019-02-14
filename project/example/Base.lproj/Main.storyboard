@@ -202,17 +202,20 @@
                                 </connections>
                             </switch>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="-44" translatesAutoresizingMaskIntoConstraints="NO" id="ekP-l0-y4t">
-                                <rect key="frame" x="30" y="262" width="354" height="74"/>
+                                <rect key="frame" x="30" y="260" width="354" height="76"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="116" placeholderIntrinsicHeight="57" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="zXm-Sn-vLc" userLabel="BedTime Stack View">
-                                        <rect key="frame" x="0.0" y="0.0" width="244.66666666666666" height="74"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="250" height="76"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="iah-CO-sIb">
                                                 <rect key="frame" x="0.0" y="0.0" width="75" height="30"/>
                                                 <subviews>
-                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="17" placeholderIntrinsicHeight="24" image="ic_bedtime" translatesAutoresizingMaskIntoConstraints="NO" id="xYr-dO-09R">
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="17" placeholderIntrinsicHeight="24" insetsLayoutMarginsFromSafeArea="NO" image="ic_bedtime" translatesAutoresizingMaskIntoConstraints="NO" id="xYr-dO-09R">
                                                         <rect key="frame" x="0.0" y="0.0" width="17" height="30"/>
                                                         <color key="tintColor" red="0.1647058824" green="0.74509803919999995" blue="0.73725490199999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="xYr-dO-09R" secondAttribute="height" multiplier="17:30" id="MTX-eT-aoU"/>
+                                                        </constraints>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="53" placeholderIntrinsicHeight="30" text="Start" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ogI-PR-3et">
                                                         <rect key="frame" x="22" y="0.0" width="53" height="30"/>
@@ -223,12 +226,14 @@
                                                 </subviews>
                                                 <constraints>
                                                     <constraint firstItem="ogI-PR-3et" firstAttribute="leading" secondItem="xYr-dO-09R" secondAttribute="trailing" constant="5" id="JYO-DJ-q1Z"/>
+                                                    <constraint firstItem="xYr-dO-09R" firstAttribute="top" secondItem="iah-CO-sIb" secondAttribute="top" id="wZX-oM-TWd"/>
                                                 </constraints>
                                             </stackView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="108" placeholderIntrinsicHeight="44" text="12:00 AM" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ezw-9O-Zsv">
-                                                <rect key="frame" x="0.0" y="30" width="144" height="44"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="148" placeholderIntrinsicHeight="46" text="12:00 AM" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ezw-9O-Zsv">
+                                                <rect key="frame" x="0.0" y="30" width="148" height="46"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" secondItem="Ezw-9O-Zsv" secondAttribute="height" multiplier="36:11" id="rUf-Db-WfG"/>
+                                                    <constraint firstAttribute="width" constant="148" id="6GA-7i-3Yi"/>
+                                                    <constraint firstAttribute="height" constant="46" id="ZYE-qW-wYI"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="33"/>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -237,10 +242,10 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="116" placeholderIntrinsicHeight="57" axis="vertical" alignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="eFm-fb-Zzw" userLabel="Wake Stack View">
-                                        <rect key="frame" x="200.66666666666663" y="0.0" width="153.33333333333337" height="74"/>
+                                        <rect key="frame" x="206" y="0.0" width="148" height="76"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="3IF-7k-9IU">
-                                                <rect key="frame" x="92.333333333333343" y="0.0" width="61" height="30"/>
+                                                <rect key="frame" x="87" y="0.0" width="61" height="30"/>
                                                 <subviews>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="17" placeholderIntrinsicHeight="26" image="ic_wake" translatesAutoresizingMaskIntoConstraints="NO" id="42v-tP-h2a">
                                                         <rect key="frame" x="0.0" y="0.0" width="17" height="30"/>
@@ -257,10 +262,11 @@
                                                     <constraint firstItem="QHT-T6-ozx" firstAttribute="leading" secondItem="42v-tP-h2a" secondAttribute="trailing" constant="5" id="K1p-Is-Mow"/>
                                                 </constraints>
                                             </stackView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="115" placeholderIntrinsicHeight="44" text="12:00 PM" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SaA-Vp-39a">
-                                                <rect key="frame" x="0.0" y="30" width="153.33333333333334" height="44"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="148" placeholderIntrinsicHeight="46" text="12:00 PM" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SaA-Vp-39a">
+                                                <rect key="frame" x="0.0" y="30" width="148" height="46"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" secondItem="SaA-Vp-39a" secondAttribute="height" multiplier="115:33" id="Pvi-O3-NlV"/>
+                                                    <constraint firstAttribute="height" constant="46" id="GGf-gB-5Vk"/>
+                                                    <constraint firstAttribute="width" constant="148" id="VJU-vR-OpR"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="33"/>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -357,7 +363,7 @@
                             <constraint firstItem="r3L-Jw-J4t" firstAttribute="centerX" secondItem="P90-uQ-KVg" secondAttribute="centerX" id="dih-5Y-8he"/>
                             <constraint firstItem="IzT-7M-vDd" firstAttribute="trailing" secondItem="uq2-VC-rq8" secondAttribute="trailing" constant="20" id="gDL-Fp-uW0"/>
                             <constraint firstItem="r3L-Jw-J4t" firstAttribute="centerY" secondItem="P90-uQ-KVg" secondAttribute="centerY" constant="91" id="prA-XH-bpG"/>
-                            <constraint firstItem="r3L-Jw-J4t" firstAttribute="top" secondItem="ekP-l0-y4t" secondAttribute="bottom" constant="43" id="rKF-Yy-aqM"/>
+                            <constraint firstItem="IzT-7M-vDd" firstAttribute="top" secondItem="ekP-l0-y4t" secondAttribute="bottom" constant="-292" id="rKF-Yy-aqM"/>
                             <constraint firstItem="uq2-VC-rq8" firstAttribute="top" secondItem="KU9-zz-7No" secondAttribute="bottom" constant="55" id="rXd-5c-EqG"/>
                             <constraint firstItem="crg-t7-pj5" firstAttribute="top" secondItem="P90-uQ-KVg" secondAttribute="top" id="rzX-J3-M8i"/>
                             <constraint firstItem="dOe-gC-spV" firstAttribute="leading" secondItem="IzT-7M-vDd" secondAttribute="leading" constant="20" id="sFw-5F-aET"/>
